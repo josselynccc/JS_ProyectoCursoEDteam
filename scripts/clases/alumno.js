@@ -4,4 +4,10 @@ export default class alumno extends usuario{
         super(nombre,apellido,edad,correo,activo)
         this.cursoTomado = cursoTomado
     }
+    getCursotomado(){
+        return this.cursoTomado
+    }
+    setCursotomado(cursotomado){
+        this.cursoTomado=cursotomado
+    }
 }

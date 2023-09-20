@@ -7,9 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+
     <div>
-        <h1>EDcursos</h1>
-        <form id="formCursos">
+        <h1 style="position: relative;text-align: center;">EDcursos</h1>
+        
+        <div class="ed-grid" style="gap: 10px;">
+            <button id="botonA" class="button">MOSTRAR FORMULARIO ALUMNO</button>
+            <button id="botonP" class="button">MOSTRAR FORMULARIO PROFESOR</button>
+            <button id="botonC" class="button">MOSTRAR FORMULARIO CURSO</button>
+        </div>
+
+        <form id="formCursos" style="display: none; padding: 30px;">
             <div class="ed-grid md-grid-4">
                 <div class="form__item">
                     <label>
@@ -29,17 +37,135 @@
                         <input type="number" min="1" name="clasesCurso" required>
                     </label>
                 </div>
-                <div class="form__item">
+                <div class="form__item" style="position: relative;text-align: center;">
                     <label>
                         <input class="button" type="submit" value="Crear Curso">
                     </label>
                 </div>
             </div>
         </form>
-    </div>
+
         
+        <form id="formAlumnos" style="display: none;padding: 30px;">
+            <div class="ed-grid md-grid-4">
+            <div class="form__item">
+                <label>
+                    Nombre
+                    <input type="text" name="nombreAlumno" required>
+                </label>
+            </div>
+            <div class="form__item">
+                <label>
+                    Apellido
+                    <input type="text" name="apellidoAlumno" required>
+                </label>
+            </div>
+            <div class="form__item">
+                <label>
+                    Edad
+                    <input type="number" name="edadAlumno" required>
+                </label>
+            </div>
+            <div class="form__item">
+                <label>
+                    Correo
+                    <input type="text" name="correoAlumno" required>
+                </label>
+            </div>
+            <div class="form__item">
+                <label>
+                    Activo
+                    <input type="text" name="activoAlumno" required>
+                </label>
+            </div>
+            <div class="form__item">
+                <label>
+                    Curso tomado
+                    <input type="text" name="ctAlumno" required>
+                </label>
+            </div>
+        </div>
+            <div class="form__item" style="position: relative;text-align: center;">
+                <label>
+                    <input class="button" type="submit" value="Crear Alumno">
+                </label>
+            </div>
+        </form>
+    </div>
+    
     <div class="ed-grid m-grid-4 s-grid-2 row-gap" id="cursos">
     </div>
+
+    <table id="alumnos" style="display: none; padding-left: 10%;padding-right: 10%;">
+        <tr>
+            <td>NOMBRE</td>
+            <td>APELLIDOS</td>
+            <td>EDAD</td>
+            <td>CORREO</td>
+            <td>ACTIVO</td>
+            <td>CURSO TOMADO</td>
+        </tr>
+    </table>
+    
+
+    <form id="formProfesor" style="display: none;padding: 30px;">
+        <div class="ed-grid md-grid-4">
+        <div class="form__item">
+            <label>
+                Nombre
+                <input type="text" name="nombreProfesor" required>
+            </label>
+        </div>
+        <div class="form__item">
+            <label>
+                Apellido
+                <input type="text" name="apellidoProfesor" required>
+            </label>
+        </div>
+        <div class="form__item">
+            <label>
+                Edad
+                <input type="number" name="edadProfesor" required>
+            </label>
+        </div>
+        <div class="form__item">
+            <label>
+                Correo
+                <input type="text" name="correoProfesor" required>
+            </label>
+        </div>
+        <div class="form__item">
+            <label>
+                Activo
+                <input type="text" name="activoProfesor" required>
+            </label>
+        </div>
+        <div class="form__item">
+            <label>
+                Curso dictado
+                <input type="text" name="cdProfesor" required>
+            </label>
+        </div>
+    </div>
+        <div class="form__item" style="position: relative;text-align: center;">
+            <label>
+                <input class="button" type="submit" value="Crear Profesor">
+            </label>
+        </div>
+    </form>
+</div>
+
+
+<table id="profesores" style="display: none; padding-left: 10%;padding-right: 10%;">
+    <tr>
+        <td>NOMBRE</td>
+        <td>APELLIDOS</td>
+        <td>EDAD</td>
+        <td>CORREO</td>
+        <td>ACTIVO</td>
+        <td>CURSO DICTADO</td>
+    </tr>
+</table>
 
     <script type="module" src="./scripts/index.js"></script>
 </body>

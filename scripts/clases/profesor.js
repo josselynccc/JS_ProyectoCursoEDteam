@@ -4,4 +4,11 @@ export default class profesor extends usuario{
         super(nombre,apellido,edad,correo,activo)
         this.cursoDictado = cursoDictado
     }
+
+    getCursodictado(){
+        return this.cursoDictado
+    }
+    setCursodictado(cursoDictado){
+        this.cursoDictado=cursoDictado
+    }
 }

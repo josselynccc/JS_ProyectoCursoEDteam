@@ -12,7 +12,28 @@ export default class usuario{
     getApellido(){
         return this.apellido
     }
-    saludar(){
-        return `hola soy ${this.nombre}`
+    getEdad(){
+        return this.edad
+    }
+    getCorreo(){
+        return this.correo
+    }
+    getActivo(){
+        return this.activo
+    }
+    setNombre(nombre){
+        this.nombre=nombre
+    }
+    setApellido(apellido){
+        this.apellido=apellido
+    }
+    setEdad(edad){
+        this.edad=edad
+    }
+    setCorreo(correo){
+        this.correo=correo
+    }
+    setActivo(activo){
+        this.activo=activo
     }
 }
